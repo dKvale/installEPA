@@ -1,0 +1,31 @@
+#' Download EPA models
+#'
+#' Download EPA models and install to chosen directory. 
+#' @param model Names of EPA models to download. Supply multiple models as a vector - ex. 'c("bpip", "aermod")'.
+#'              Options: aermap, aermod, aerscreen, bpip, makemet.
+#' @param dir Folder for installation. Defaults to working directory.
+#' @keywords download EPA models install
+#' @export
+#' @examples
+#' install_epa(model = "aerscreen, bpip", dir = "bpip_exe")
+# 
+# 
+
+install_epa <- function(model, dir = getwd()) {
+  
+  epa_urls <- c("aermap"    =  "https://www3.epa.gov/ttn/scram/models/aermod/aermap/aermap_exe.zip",
+                "aermod"    =  "https://www.epa.gov/ttn/scram/models/aermod/aermod_exe.zip",
+                "aerscreen" =  "https://www3.epa.gov/ttn/scram/models/screen/aerscreen_code.zip",
+                "bpip"      =  "https://www3.epa.gov/ttn/scram/models/relat/bpipprime.zip",
+                "makemet"   =  "https://www3.epa.gov/ttn/scram/models/screen/makemet_code.zip")
+  
+  
+  for(i in 1:length(model)) {
+    
+    tf <- tempfile(model[i], fileext = ".zip")
+  
+    download.file(epa_urls[model[i]], tf)
+  
+    unzip(tf, exdir = paste0(dir, "/", model[i]))
+  }
+}
