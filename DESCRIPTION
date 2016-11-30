@@ -2,11 +2,12 @@ Package: installEPA
 Title: Download EPA air models
 Version: 0.0.0.9000
 Authors@R: person("Dorian", "Kvale", email = "dorian.kvale@state.mn.us", role = c("aut", "cre"))
-Description: This package downloads a list of EPA air models.
+Description: Download a list of EPA air models. Options: aermap, aermod, aerscreen, bpip, makemet.
 Depends: R (>= 3.2.4)
-License: GNU GPLv3
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 5.0.1.9000
+Imports: utils
 Suggests: knitr,rmarkdown
 VignetteBuilder: knitr

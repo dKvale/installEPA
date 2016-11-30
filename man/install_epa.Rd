@@ -2,7 +2,7 @@
 % Please edit documentation in R/install_epa.R
 \name{install_epa}
 \alias{install_epa}
-\title{Download EPA models}
+\title{Download EPA air models}
 \usage{
 install_epa(model, dir = getwd())
 }
@@ -13,10 +13,10 @@ Options: aermap, aermod, aerscreen, bpip, makemet.}
 \item{dir}{Folder for installation. Defaults to working directory.}
 }
 \description{
-Download EPA models and install to entered folder.
+Download the most recent version of EPA air models and install to chosen directory.
 }
 \examples{
-install_epa(model = "aerscreen, bpip", dir = "bpip_exe")
+install_epa(model = c("aerscreen", "bpip"), dir = "bpip_exe")
 }
 \keyword{EPA}
 \keyword{download}
