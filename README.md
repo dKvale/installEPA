@@ -1,9 +1,11 @@
 # installEPA
 
-R package to download a list of EPA air models including:  
+This R package downloads a list of EPA air models.  
 
-- AERMAP  
-- AERMET  
+EPA air models include:  
+  
+- AERMAP 
+- AERMET 
 - AERMOD  
 - AERSCREEN  
 - BPIP
