@@ -7,8 +7,8 @@
 install_epa(model, dir = getwd())
 }
 \arguments{
-\item{model}{Names of EPA models to download. Supply multiple models as a vector - ex. 'c("bpip", "aermod")'.
-Options: aermap, aermod, aerscreen, bpip, makemet.}
+\item{model}{Names of EPA models to download. Supply multiple models as a vector -> \code{c("bpip", "aermod")}.
+Options: aermap, aermet, aermod, aerscreen, bpip, makemet.}
 
 \item{dir}{Folder for installation. Defaults to working directory.}
 }
