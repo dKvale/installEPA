@@ -8,7 +8,6 @@ This R package downloads a list of EPA air models.
 
 
 EPA models include:  
-=======
 
 - AERMAP 
 - AERMET 
