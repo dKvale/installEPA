@@ -11,7 +11,9 @@
 # 
 # 
 
-install_epa <- function(model, dir = getwd()) {
+install_epa <- function(model, 
+                        dir              = getwd(),
+                        add_model_folder = TRUE) {
   
   epa_urls <- c("aermap"    =  "https://www3.epa.gov/ttn/scram/models/aermod/aermap/aermap_exe.zip",
                 "aermet"    =  "https://www3.epa.gov/ttn/scram/7thconf/aermod/aermet_exe.zip",
@@ -26,7 +28,7 @@ install_epa <- function(model, dir = getwd()) {
   
     utils::download.file(epa_urls[model[i]], tf)
   
-    utils::unzip(tf, exdir = paste0(dir, "/", model[i]))
+    utils::unzip(tf, exdir = paste0(dir, ifelse(add_model_folder, paste0("/", model[i]), "")))
     
   }
 }

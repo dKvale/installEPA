@@ -4,7 +4,7 @@
 \alias{install_epa}
 \title{Download EPA air models}
 \usage{
-install_epa(model, dir = getwd())
+install_epa(model, dir = getwd(), add_model_folder = TRUE)
 }
 \arguments{
 \item{model}{Names of EPA models to download. Supply multiple models as a vector -> \code{c("bpip", "aermod")}.
