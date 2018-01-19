@@ -22,7 +22,7 @@ install_epa <- function(model = "all",
                 "bpip"      =  "https://www3.epa.gov/ttn/scram/models/relat/bpipprime.zip",
                 "makemet"   =  "https://www3.epa.gov/ttn/scram/models/screen/makemet_code.zip")
   
-  if (tolower(model) == "all) model <- c("aermap", "aermet", "aermod", "aerscreen", "bpip", "makemet")
+  if (tolower(model) == "all") model <- c("aermap", "aermet", "aermod", "aerscreen", "bpip", "makemet")
   
   for(i in 1:length(model)) {
     
