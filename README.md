@@ -19,4 +19,12 @@ EPA models include:
 
 ## Example
 
-`install_epa(model = c("aerscreen", "bpip"), dir = "EPA software")`
+To download only AERSCREEN and BPIP:
+```{r}
+install_epa(model = c("aerscreen", "bpip"), dir = "EPA software")`
+```
+
+To download all available EPA air models:
+```{r}
+install_epa(dir = "EPA software")`
+```
