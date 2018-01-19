@@ -7,7 +7,7 @@
 #' @keywords download EPA models install
 #' @export
 #' @examples
-#' install_epa(model = c("aerscreen", "bpip"), dir = "bpip_exe")
+#' install_epa(model = c("aerscreen", "bpip"), dir = "EPA software")
 # 
 # 
 
