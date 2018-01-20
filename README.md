@@ -24,7 +24,7 @@ To download only AERSCREEN and BPIP:
 install_epa(model = c("aerscreen", "bpip"), dir = "EPA software")`
 ```
 
-To download all available EPA air models:
+To download all available EPA air models (this is the default):
 ```{r}
 install_epa(dir = "EPA software")`
 ```
