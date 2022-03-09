@@ -21,6 +21,8 @@ EPA models include:
 
 To download only AERSCREEN and BPIP:
 ```{r}
+library(installEPA)
+
 install_epa(model = c("aerscreen", "bpip"), dir = "EPA software")`
 ```
 
