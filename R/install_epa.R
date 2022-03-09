@@ -15,12 +15,12 @@ install_epa <- function(model = "all",
                         dir              = getwd(),
                         add_model_folder = TRUE) {
   
-  epa_urls <- c("aermap"    =  "https://www3.epa.gov/ttn/scram/models/aermod/aermap/aermap_exe.zip",
-                "aermet"    =  "https://www3.epa.gov/ttn/scram/7thconf/aermod/aermet_exe.zip",
-                "aermod"    =  "https://www.epa.gov/ttn/scram/models/aermod/aermod_exe.zip",
-                "aerscreen" =  "https://www3.epa.gov/ttn/scram/models/screen/aerscreen_code.zip",
-                "bpip"      =  "https://www3.epa.gov/ttn/scram/models/relat/bpipprime.zip",
-                "makemet"   =  "https://www3.epa.gov/ttn/scram/models/screen/makemet_code.zip")
+  epa_urls <- c("aermap"    =  "https://gaftp.epa.gov/Air/aqmg/SCRAM/models/related/aermap/aermap_exe.zip",
+                "aermet"    =  "https://gaftp.epa.gov/Air/aqmg/SCRAM/models/met/aermet/aermet_exe.zip",
+                "aermod"    =  "https://gaftp.epa.gov/Air/aqmg/SCRAM/models/preferred/aermod/aermod_exe.zip",
+                "aerscreen" =  "https://gaftp.epa.gov/Air/aqmg/SCRAM/models/screening/aerscreen/aerscreen_code.zip",
+                "bpip"      =  "https://gaftp.epa.gov/Air/aqmg/SCRAM/models/related/bpip/bpipprime.zip",
+                "makemet"   =  "https://gaftp.epa.gov/Air/aqmg/SCRAM/models/screening/aerscreen/makemet_code.zip")
   
   if (tolower(model) == "all") model <- c("aermap", "aermet", "aermod", "aerscreen", "bpip", "makemet")
   
