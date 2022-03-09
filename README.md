@@ -26,5 +26,5 @@ install_epa(model = c("aerscreen", "bpip"), dir = "EPA software")`
 
 To download all available EPA air models (this is the default):
 ```{r}
-install_epa(dir = "EPA software")`
+install_epa(dir = "EPA software")
 ```
