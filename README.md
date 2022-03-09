@@ -16,17 +16,24 @@ EPA models include:
 - BPIP
 - MAKEMET
 
+## Install 
+
+```r
+install.packages("remotes")
+
+remotes::install_github("dKvale/installEPA")
+```
 
 ## Example
 
 To download only AERSCREEN and BPIP:
-```{r}
+```r
 library(installEPA)
 
 install_epa(model = c("aerscreen", "bpip"), dir = "EPA software")`
 ```
 
 To download all available EPA air models (this is the default):
-```{r}
+```r
 install_epa(dir = "EPA software")
 ```
